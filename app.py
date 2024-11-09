@@ -91,10 +91,6 @@ st.markdown("""
     **Explore** the best tourist attractions across India with real-time weather updates, beautiful images, and travel tips!
     """)
 
-# Display an intro image at the top
-intro_image = Image.open("C:\\Users\\admin\\Pictures\\dc0475ea337cd67a214ddcf0e174a9bb.jpg")
-st.image(intro_image, use_column_width=True)
-
 # Dropdown for selecting the state
 state_name = st.selectbox("Select a State:", sorted(new_df['State'].dropna().unique()))
 
